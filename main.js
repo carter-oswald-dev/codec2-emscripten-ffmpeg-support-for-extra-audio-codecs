@@ -310,7 +310,7 @@ class Encoder extends React.Component {
             id="enc-upload"
             className="form-control-file"
             type="file"
-            accept="audio/*"
+            accept="audio/wav,audio/wave,audio/x-wav,audio/mpeg,audio/mp4,audio/aac,audio/ogg,audio/flac,audio/x-flac,audio/opus,.wav,.mp3,.m4a,.aac,.ogg,.flac,.opus,.mp4"
           />
         </div>
       </div>
