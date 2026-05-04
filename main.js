@@ -10,9 +10,9 @@ let _ffmpeg = null;
 async function getFFmpeg() {
   if (_ffmpeg) return _ffmpeg;
 
-  // createFFmpegCore is exposed by build/ffmpeg_audio_wasm.js
+  // createFFmpegCore is exposed by build/ffmpeg.js
   const core = await createFFmpegCore({
-    locateFile: (path) => `./build/${path}`,
+    locateFile: (path) => `./build/ffmpeg.wasm`,
   });
 
   // Wrap the raw core in a simple helper object matching the v0.9 call style
